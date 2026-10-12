@@ -83,7 +83,7 @@ services:
     # Other verified alternatives are listed for reference; uncomment one
     # line and comment out the others if you prefer a different source.
     #
-    #   coollabsio/minio:latest       (default, drop-in, no permission changes)
+    #   coollabsio/minio:RELEASE.2025-10-15T17-29-55Z (default, drop-in, pinned)
     #   ghcr.io/golithus/minio:latest (multi-arch, GitHub Container Registry)
     #   cgr.dev/chainguard/minio:latest (distroless, may need volume permission adjustments)
     #
@@ -91,7 +91,7 @@ services:
     #   docker compose pull minio
     #   docker compose up --build
     # ---------------------------------------------------------------------------
-    image: coollabsio/minio:latest
+    image: coollabsio/minio:RELEASE.2025-10-15T17-29-55Z@sha256:69b55a1c1c5dc285ce04db96689f5b2102317fc77a50680a1874ca6efd1c87f9
     # image: ghcr.io/golithus/minio:latest
     # image: cgr.dev/chainguard/minio:latest
     command: server /data --console-address ":9001"
